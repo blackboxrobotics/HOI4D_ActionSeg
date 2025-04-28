@@ -208,9 +208,9 @@ def main(args):
 
     st = time.time()
 
-    dataset = SegDataset(root='/datasets/AS_data_base', train=True)
+    dataset = SegDataset(root='./datasets/AS_data_base', train=True)
 
-    dataset_test = SegDataset(root='/datasets/AS_data_base', train=False)
+    dataset_test = SegDataset(root='./datasets/AS_data_base', train=False)
 
     print("Creating data loaders")
 
