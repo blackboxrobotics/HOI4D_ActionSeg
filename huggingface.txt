@@ -1,0 +1,3 @@
+Published test1.h5 and train.h5 to HF for ease of use on cloud cluster
+
+https://huggingface.co/datasets/Shivamkak/HOI4D_ActionSeg_dataset
