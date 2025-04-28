@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pth
+*.h5
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Build files
+build/
+dist/
+*.egg-info/
+modules/build/
+
+# OS generated files
+.DS_Store

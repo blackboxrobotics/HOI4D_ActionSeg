@@ -28,14 +28,20 @@ class SegDataset(Dataset):
         self.center = []
         self.label = []
         if self.train:
-            for filename in ['train1.h5', 'train2.h5', 'train3.h5', 'train4.h5']:
+            # for filename in ['train1.h5', 'train2.h5', 'train3.h5', 'train4.h5']:
+            
+            # Using only train1.h5 to start
+            for filename in ['train1.h5']:
                 print(filename)
                 with h5py.File(root+'/'+filename,'r') as f:
                     self.pcd.append(np.array(f['pcd']))
                     self.center.append(np.array(f['center']))
                     self.label.append(np.array(f['label']))
         else:
-            for filename in ['test1.h5', 'test2.h5']:
+            # for filename in ['test1.h5', 'test2.h5']:
+
+            # Using only test1.h5 to start
+            for filename in ['test1.h5']:
                 print(filename)
                 with h5py.File(root+'/'+filename,'r') as f:
                     self.pcd.append(np.array(f['pcd']))
